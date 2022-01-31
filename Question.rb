@@ -11,7 +11,14 @@ class Question
     answer = gets.chomp.to_i
     puts "Answer #{answer}"
     puts "Check #{check}"
-      
+    if (check == answer) then
+      puts "YES! You are correct."
+      true
+    else
+      puts "Seriously? No!"
+      false
+    end
+    return answer
   end
     
     
