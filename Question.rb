@@ -18,11 +18,12 @@ class Question
       puts "Seriously? No!"
       false
     end
-    return answer
+    return answer == check
   end
     
     
 end
 
-question1 = Question.new
-question1.ask_question
+# question1 = Question.new
+# # puts question1.inspect
+# question1.ask_question
