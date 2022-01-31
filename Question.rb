@@ -9,8 +9,6 @@ class Question
   def ask_question
     puts "What does #{arg1} plus #{arg2} equal?"
     answer = gets.chomp.to_i
-    puts "Answer #{answer}"
-    puts "Check #{check}"
     if (check == answer) then
       puts "YES! You are correct."
       true
@@ -23,7 +21,3 @@ class Question
     
     
 end
-
-# question1 = Question.new
-# # puts question1.inspect
-# question1.ask_question

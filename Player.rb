@@ -3,10 +3,7 @@ class Player
 
   def initialize(name)
     @name = name
-    @score = 0
+    @score = 3
   end
-
-  def win?
-    self.score +=1
-  end
+ 
 end
