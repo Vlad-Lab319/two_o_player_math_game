@@ -34,15 +34,13 @@ class Game
   end
 
   def game_over
-    @players.each{|player|
-      if player.score != 0 
-        puts "#{player.name} wins with a score of #{player.score}/3"
-        puts "------ GAME OVER ------"
-      end}
+    winner = @players.index{|player| player.score != 0} 
+    puts "#{@players[winner].name} wins with a score of #{@players[winner].score}/3"
+    puts "------ GAME OVER ------"
   end
   
 end
 
-game = Game.new("Artem", "Papa")
+game = Game.new("Bob", "Bill")
 
 game.start
